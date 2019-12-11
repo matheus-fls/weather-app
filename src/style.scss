@@ -1,1 +1,9 @@
 h1 {color: red;}
+
+body {
+  max-width: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 11% auto;
+}
