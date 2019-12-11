@@ -2,14 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Weather App</title>
-  <script src="../dist/main.js"></script>
-</head>
+  <title>Weather Now</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:700|Trade+Winds&display=swap" rel="stylesheet"> </head>
 <body>
   <main class="main">
-    <h1>Weather Forecast</h1>
-    <p>Type your city and country to begin.</p>
-    <p class="example">Mexico City, MX</p>
+    <a href="https://github.com/matheus-fls/weather-app" target="_blank"><h1>Weather Now</h1></a>
+    <form id="form">
+      <input type="text" id="search" name="q" placeholder="Mexico City, MX" required>
+      <button type="submit" id="submit" onclick="return false"><i class="fas fa-search"></i></button>
+    </form>
+    <div id="content"></div>
   </main>
+  <script src="./main.js"></script>
 </body>
 </html>
