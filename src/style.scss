@@ -1,9 +1,55 @@
-h1 {color: red;}
-
 body {
   max-width: 900px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 11% auto;
+  margin: 15% auto;
+  font-family: 'Libre Baskerville', serif;
+  box-sizing: border-box;
+  main { 
+    width: 75%;
+    text-align: center;
+    justify-content: center;
+    h1 {
+      font-family: 'Trade Winds', cursive;
+      font-size: 48px;
+    }
+    form {
+      justify-content: center;
+      position: relative;
+      input {
+        text-align: center;
+        border-radius: 20px;
+        border-style: solid;
+        line-height: 30px;
+        padding-left: 12px;
+        font-family: 'Libre Baskerville', serif;
+        width: 97%;
+        &:focus::placeholder { color: transparent; }
+      }
+      button {
+        width: 42px;
+        background: none;
+        color: grey;
+        font-size: 17px;
+        border: none;
+        border-left: none;
+        cursor: pointer;
+        position: absolute;
+        top: 7px;
+        right: 3px;
+        &:hover {
+          color: black;
+        }
+      }
+    }
+    #content {
+      margin-top: 30px;
+      padding: 12px;
+    }
+    .light-border {
+      border: 1px solid lightgrey;
+      border-radius: 10px;
+    }
+  }
 }

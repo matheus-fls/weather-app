@@ -12,19 +12,7 @@ async function getWeather() {
     const weatherData = await response.json();
     render(weatherData);
   } catch (err) {
-    console.log(err);
-  }
-}; 
-
-async function getImg(status) {
-  try {
-    const response = await fetch(`http://api.giphy.com/v1/gifs/random?api_key=mM0ENgiKUlPnwBfA2gKnvsl9UsURPTbN&tag=${status}+weather&rating=R`, {mode: 'cors'});
-    const coolGif = await response.json();
-    console.log(coolGif.data.images.original.url);
-    // return coolGif.data[0].images.original.url;  
-    document.getElementById('giphy').src = coolGif.data.images.original.url;
-  } catch (err) {
-    console.log(err);
+    alert("Invalid input, try again!");
   }
 }; 
 
@@ -35,12 +23,11 @@ const temperature = (temp) => ({
 
 const render = (data) => {
   const temp = temperature(data.main.temp);
-  const giphy = getImg(data.weather[0].main);
+  document.getElementById('content').setAttribute("class", "light-border");
   document.getElementById('content').innerHTML = `
     <h2>${data.name}, ${data.sys.country}</h2>
     <h4>${data.weather[0].description}</h4>
     <p>${temp.metricTemp} °C</p>
     <p>${temp.imperialTemp} °F</p>
-    <img id="giphy">
   `;
 };
