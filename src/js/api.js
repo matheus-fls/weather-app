@@ -5,8 +5,8 @@ const fetchUnit = (unit, location) => fetch(`http://api.openweathermap.org/data/
 async function getWeather() {
   try {
     const location = document.getElementById('search').value;
-    const response = document.querySelector('input[name="unit"]:checked').value === 'celsius' ?
-      await fetchUnit('metric', location) : await fetchUnit('imperial', location);
+    const response = document.querySelector('input[name="unit"]:checked').value === 'celsius' 
+      ? await fetchUnit('metric', location) : await fetchUnit('imperial', location);
     const weatherData = await response.json();
     render(weatherData);
   } catch (err) {
