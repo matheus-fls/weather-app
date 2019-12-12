@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --progress --mode=production",
     "watch": "webpack --progress --watch",
-    "server": "webpack-dev-server --open --content-base ./dist"
+    "server": "webpack-dev-server --open"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
   "homepage": "https://github.com/matheus-fls/weather-app#readme",
   "devDependencies": {
     "@babel/core": "^7.7.5",
+    "@babel/plugin-transform-runtime": "^7.7.6",
     "@babel/preset-env": "^7.7.6",
     "@fortawesome/fontawesome-free": "^5.12.0",
     "babel-loader": "^8.0.6",
@@ -34,7 +35,6 @@
     "webpack-dev-server": "^3.9.0"
   },
   "dependencies": {
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "regenerator-runtime": "^0.13.3"
+    "@babel/runtime": "^7.7.6"
   }
 }
