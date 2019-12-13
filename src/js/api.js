@@ -10,7 +10,7 @@ async function getWeather() {
     const weatherData = await response.json();
     render(weatherData);
   } catch (err) {
-    alert('Invalid input, try again!');
+    alert('Location not found!');
   }
 }
 
