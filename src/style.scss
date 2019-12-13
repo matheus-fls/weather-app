@@ -55,12 +55,21 @@ body {
     #content {
       margin-top: 15px;
       padding: 12px;
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h4 { margin-left: 12px;}
+      }
     }
     .light-border {
       border: 1px solid lightgrey;
       border-radius: 10px;
       box-shadow: 10px 10px 5px grey;
     }
-    #temp { font-size: 29px; }
+    #temp { 
+      font-size: 29px; 
+      margin-top: 15px;
+    }
   }
 }
