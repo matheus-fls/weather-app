@@ -1,7 +1,7 @@
 import render from './view';
 
-const endpoint = 'https://protected-brushlands-10302.herokuapp.com/weather'; 
-const fetchUnit = (unit, location) => fetch(`${endpoint}?q=${location}&units=${unit}`); 
+const endpoint = 'https://protected-brushlands-10302.herokuapp.com/weather';
+const fetchUnit = (unit, location) => fetch(`${endpoint}?q=${location}&units=${unit}`);
 
 async function getWeather() {
   try {
