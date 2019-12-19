@@ -10,6 +10,11 @@
 - CSS (SCSS),
 - JavaScript (Node)
 
+### APIS
+  - [OpenWeather API](https://openweathermap.org/)
+  - [IPInfo](https://ipinfo.io/)
+  - [API Key Proxy](https://github.com/MauricioRobayo/api-key-proxy-heroku)
+
 ## Live Demo
 
 [Live Demo Link](https://matheus-fls.github.io/weather-app/dist/)
