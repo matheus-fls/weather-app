@@ -5,7 +5,7 @@ const fetchUnit = (unit, location) => fetch(`${endpoint}?q=${location}&units=${u
 
 async function getWeather() {
   try {
-    const location = document.getElementById('search').value;
+    const location = document.getElementById('search').value || document.getElementById('search').placeholder;
     const response = document.querySelector('input[name="unit"]:checked').value === 'celsius'
       ? await fetchUnit('metric', location) : await fetchUnit('imperial', location);
     const weatherData = await response.json();
